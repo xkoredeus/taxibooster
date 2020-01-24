@@ -1,50 +1,29 @@
+
 $(function() {
-  $('.main-slider__cnt').owlCarousel({
-      nav: true,
-      items: 1,
-      loop: false,
-      dots: true,
-      navText: ["<img src='img/slider__arrow_prev.png'>", "<img src='img/slider__arrow_next.png'>"],
-      responsive : {
-        0   : {
-            items: 1
-        },
-        380 : {
-            items: 1
-        },
-        480 : {
-            items: 1
-        },
-        768 : {
-            items: 3
-        },
-        1040 : {
-            items: 4
-        }
-      }
-	});
-	// tabs 
-  if ( $(window).width() > 600 ) {
-    $(document).ready(function () {
-      $(".tabs__content-item:not(:first-child)").hide();
-      $(".tabs__container div.tabs__content-item.active-tab").show();
-      $('ul.tabs__list > li').click(function () {
-        if (!($(this).hasClass('active'))) {
-          var thisLi = $(this);
-          var numLi = thisLi.index();
-          thisLi.addClass('active').siblings().removeClass('active');
-          thisLi.parent().next().children('div').hide().eq(numLi).fadeIn('slow');
-        }
-      });
+    setTimeout(function () {
+        $('.preloader__wrp').fadeOut();
+    }, 1000);
+    $('.banner__descr-link').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#profit").offset().top - 50
+        }, 700);
     });
-  };
-  if ( $(window).width() < 600 ) {
-    $('.tabs-acc__btn').on('click', function(){
-      $(this).toggleClass('active').siblings('.tabs-acc__cnt').slideToggle();
-    })
-  };
+
+    let tl = new TimelineMax();
+    const controller = new ScrollMagic.Controller();
+
+    tl
+        .fromTo('.banner__subttl', .5, {x:-30,opacity:0}, {x:0,opacity:1}, "+=1.5")
+        .staggerFromTo('.banner__ttl', .5, {x:-30,opacity:0}, {x:0,opacity:1}, 0.7)
+        .staggerFromTo('.banner__descr', .5, {y:30,opacity:0}, {y:0,opacity:1}, 0.7)
+        .staggerFromTo('.header__logo', .2, {x:-30,opacity:0}, {x:0,opacity:1}, 0.7)
+        .staggerFromTo('.header__nav-link', .2, {x:30,opacity:0}, {x:0,opacity: 1}, 0.1)
+        .staggerFromTo('.header__login-btn', .2, {x:30,opacity:0}, {x:0,opacity:1}, 0.7)
+        .staggerFromTo('.header__btn', .2, {scale:0.5,opacity:0}, {scale:1,opacity:1}, 0.7)
   //Закрываем AjaxForm popup после успешной отправки
   // $(document).on('af_complete', function(event,res) {
   //   if(res.success) parent.$.fancybox.close();
   // });
+
+
 });
