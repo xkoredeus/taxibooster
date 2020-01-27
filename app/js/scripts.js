@@ -1,11 +1,11 @@
 
 $(function() {
-    // $(window).on('load', function () {
-    //     $('.preloader__wrp').fadeOut();
-    // });
-    setTimeout(function () {
+    $(window).on('load', function () {
         $('.preloader__wrp').fadeOut();
-    }, 3000);
+    });
+    // setTimeout(function () {
+    //     $('.preloader__wrp').fadeOut();
+    // }, 3000);
     $('.banner__descr-link').on('click', function () {
         $('html, body').animate({
             scrollTop: $("#profit").offset().top - 50
