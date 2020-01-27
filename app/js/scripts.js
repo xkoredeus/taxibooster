@@ -149,88 +149,48 @@ $(function() {
         reverse: false,
     })
         .setTween(tl1p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 10
-        });
+        .addTo(controller);
     const scene1p2 = new ScrollMagic.Scene({
         triggerElement: ".banner__descr",
         triggerHook: 0.4,
     })
         .setTween(tl1p2)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 90
-        });
+        .addTo(controller);
     const scene2p1 = new ScrollMagic.Scene({
         triggerElement: ".profit",
         triggerHook: 0.5,
         reverse: false,
     })
         .setTween(tl2p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-        });
+        .addTo(controller);
     const scene2p2 = new ScrollMagic.Scene({
         triggerElement: ".profit__descr",
         triggerHook: 0.5,
         reverse: false,
     })
         .setTween(tl2p2)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 20
-        });
+        .addTo(controller);
     const scene3p1 = new ScrollMagic.Scene({
         triggerElement: ".need",
         triggerHook: 0.5,
         reverse: false,
     })
         .setTween(tl3p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 10
-        });
+        .addTo(controller);
     const scene3p2 = new ScrollMagic.Scene({
         triggerElement: ".need__descr",
         triggerHook: 0.5,
         reverse: false,
     })
         .setTween(tl3p2)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 10
-        });
+        .addTo(controller);
     const scene4p1 = new ScrollMagic.Scene({
         triggerElement: ".pay",
         triggerHook: 0.3,
         reverse: false,
     })
         .setTween(tl4p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-        });
+        .addTo(controller);
     const scene4p2 = new ScrollMagic.Scene({
         triggerElement: ".pay__descr",
         triggerHook: 0.4,
@@ -238,49 +198,29 @@ $(function() {
     })
         .setTween(tl4p2)
         .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 10
-        });
     const scene5p1 = new ScrollMagic.Scene({
         triggerElement: ".dia",
         triggerHook: 0.3,
         reverse: false,
     })
         .setTween(tl5p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-        });
+        .addTo(controller);
     const scene5p2 = new ScrollMagic.Scene({
         triggerElement: ".dia__descr",
         triggerHook: 0.7,
         reverse: false,
     })
         .setTween(tl5p2)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-            indent: 10
-        });
+        .addTo(controller);
+        
     const scene6p1 = new ScrollMagic.Scene({
         triggerElement: ".feed",
         triggerHook: 0.3,
         reverse: false,
     })
         .setTween(tl6p1)
-        .addTo(controller)
-        .addIndicators({
-            colorTrigger: "purple",
-            colorStart: "purple",
-            colorEnd: "purple",
-        });
+        .addTo(controller);
+        
     // const scene7p2 = new ScrollMagic.Scene({
     //     triggerElement: ".feed__form",
     //     triggerHook: 0.5,
