@@ -87,26 +87,32 @@
 					</div>
 					<div class="col-xl-5">
 						<form class="profit__calc h-100">
-							<div class="profit__calc-group mb-4 w-100">
+							<div class="profit__calc-group mb-5 w-100">
 								<label>Кол-во водителей:</label>
 								<div class="d-flex align-items-center justify-content-between">
 									<div class="profit__calc-val">от 5</div>
 									<div class="profit__calc-val">до 1000</div>
 								</div>
-								<input type="range" class="w-100">
+								<div class="js-slider_1 w-100">
+									<div class="profit__calc-handle ui-slider-handle js-handle_1"><span></span></div>
+								</div>
 							</div>
-							<div class="profit__calc-group mb-4 w-100">
+							<div class="profit__calc-group mb-5 w-100">
 								<label>Кол-во доп персонала:</label>
 								<div class="d-flex align-items-center justify-content-between">
 									<div class="profit__calc-val">от 1</div>
 									<div class="profit__calc-val">до 50</div>
 								</div>
-								<input type="range" class="w-100">
+								<div class="js-slider_2 w-100">
+									<div class="profit__calc-handle ui-slider-handle js-handle_2"><span></span></div>
+								</div>
 							</div>
-							<button type="submit" class="btn profit__calc-btn">Рассчитать</button>
-							<div class="profit__calc-res mt-3">
-								<div>Итого вы экономите:</div>
-								<div class="profit__calc-res-val">190 000 ₽ ежемесячно</div>
+							<div class="profit__calc-res-wrp mt-3">
+								<button type="button" class="btn profit__calc-btn js-res__show">Рассчитать</button>
+								<div class="profit__calc-res">
+									<div>Итого вы экономите:</div>
+									<div class="profit__calc-res-val">190 000 ₽ ежемесячно</div>
+								</div>
 							</div>
 						</form>
 					</div>

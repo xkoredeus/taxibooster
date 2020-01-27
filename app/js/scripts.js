@@ -294,4 +294,122 @@ $(function() {
     //         colorEnd: "purple",
     //         indent: 10
     //     });
+    $( function() {
+        let handle1 = $( ".js-handle_1 span" );
+        $( ".js-slider_1 " ).slider({
+            value: 250,
+            range: "max",
+            min: 5,
+            max: 1000,
+            create: function() {
+                handle1.text( $( this ).slider( "value" ) );
+            },
+            slide: function( event, ui ) {
+                handle1.text( ui.value );
+            }
+        });
+        let handle2 = $( ".js-handle_2 span" );
+        $( ".js-slider_2 " ).slider({
+            value: 25,
+            range: "max",
+            min: 1,
+            max: 50,
+            create: function() {
+                handle2.text( $( this ).slider( "value" ) );
+            },
+            slide: function( event, ui ) {
+                handle2.text( ui.value );
+            }
+        });
+        var tarif = 6,
+            result_outptut = jQuery(".profit__calc-res-val"),
+            client = 24,
+            revenue = 0,
+            check = 4000,
+            time = 3;
+
+        function recount() {
+            revenue = (client+check+time)*tarif;
+            result_outptut.html(revenue + ' руб/мес');
+        };
+        $(document).on("change keyup", "#amount", function() {
+            client = +$(this).val();
+            $(".js-slider_1").slider("value", client);
+            recount();
+        });
+        $(document).on("change keyup", "#amount2", function() {
+            check = +$(this).val();
+            $(".js-slider_2").slider("value", check);
+            recount();
+        });
+    } );
+    $('.js-res__show').on('click', function resShowBtnClick(e) {
+        e.preventDefault();
+        $(this).hide(300);
+        setTimeout(function () {
+            $('.profit__calc-res').show(300);
+        }, 400);
+
+    });
+
+
+    // const slider = $("#calculatorSlider");
+    // const developerBtn = $("#developerBtn");
+    // const corporateBtn = $("#corporateBtn");
+    // const privateBtn = $("#privateBtn");
+    // const reseller = $("#resellerEarnings");
+    // const client = $("#clientPrice");
+    // const percentageBonus = 30; // = 30%
+    // const license = {
+    //     corpo: {
+    //         active: true,
+    //         price: 319,
+    //     },
+    //     dev: {
+    //         active: false,
+    //         price: 149,
+    //     },
+    //     priv: {
+    //         active: false,
+    //         price: 79,
+    //     }
+    // }
+    //
+    // function calculate(price, value) {
+    //     client.text((Math.round((price - (value / 100 * price)))) + '$');
+    //     reseller.text((Math.round(((percentageBonus - value) / 100 * price))) + '$')
+    // }
+    //
+    // function reset(price) {
+    //     slider.val(0);
+    //     client.text(price + '$');
+    //     reseller.text((Math.round((percentageBonus / 100 * price))) + '$');
+    // }
+    // developerBtn.on('click', function(e) {
+    //     license.dev.active = true;
+    //     license.corpo.active = false;
+    //     license.priv.active = false;
+    //     reset(license.dev.price)
+    // });
+    // privateBtn.on('click', function(e) {
+    //     license.dev.active = false;
+    //     license.corpo.active = false;
+    //     license.priv.active = true;
+    //     reset(license.priv.price);
+    // });
+    // corporateBtn.on('click', function(e) {
+    //     license.dev.active = false;
+    //     license.corpo.active = true;
+    //     license.priv.active = false;
+    //     reset(license.corpo.price);
+    // });
+    // slider.on("input change", function(e) {
+    //     if (license.priv.active) {
+    //         calculate(license.priv.price, $(this).val());
+    //     } else if (license.corpo.active) {
+    //         calculate(license.corpo.price, $(this).val());
+    //     } else if (license.dev.active) {
+    //         calculate(license.dev.price, $(this).val());
+    //     }
+    // })
 });
