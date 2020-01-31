@@ -36,6 +36,8 @@ body
 	line-height: 1.4
 	position: relative
 	-webkit-font-smoothing: antialiased
+	+r(1200)
+		font-size: 16px
 h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
 	color: #fff
 	background-color: $dark
@@ -185,6 +187,9 @@ input[type="number"]
 	outline: none
 	display: inline-block
 	min-width: 192px
+	+r(1200)
+		padding: 10px 15px
+		min-width: 170px
 	&:hover
 		color: #fff
 		background-color: $purple
@@ -240,6 +245,8 @@ input[type="number"]
 .section
 	&_inner
 		padding: 60px 0
+		+r(1200)
+			padding: 40px 0
 	&__ttl
 		font-size: 60px
 		font-weight: 400
@@ -247,12 +254,16 @@ input[type="number"]
 		letter-spacing: 1px
 		margin-bottom: 25px
 		text-transform: uppercase
+		+r(1200)
+			font-size: 28px
 	&__subttl
 		font-size: 38px
 		font-weight: 100
 		line-height: 1.2
 		letter-spacing: .5px
 		margin-bottom: 20px
+		+r(1200)
+			font-size: 24px
 .preloader
 	display: inline-block
 	position: relative
@@ -280,16 +291,24 @@ input[type="number"]
 	display: flex
 	align-items: center
 	z-index: 1
+	+r(1200)
+		min-height: 20vh
+		padding: 20px 0
 	&__logo
 		svg
 			fill: #fff
 			+ease
+		+r(1200)
+			margin-bottom: 15px
 		&:hover
 			svg
 				opacity: .8
 	&__nav
 		margin-bottom: 2px
 		margin-left: 50px
+		+r(1200)
+			margin-left: 0
+			margin-bottom: 15px
 		&-link
 			display: inline-block
 			font-size: 16px
@@ -308,6 +327,8 @@ input[type="number"]
 		margin-right: 45px
 		display: flex
 		align-items: center
+		+r(1200)
+			margin-right: 15px
 		svg
 			fill: #fff
 			+ease
@@ -318,6 +339,8 @@ input[type="number"]
 	position: relative
 	min-height: 100vh
 	overflow: hidden
+	+r(1200)
+		min-height: 600px
 	&__overlay
 		+ovl
 		background-color: $purple
@@ -338,11 +361,15 @@ input[type="number"]
 		justify-content: center
 		align-items: flex-start
 		z-index: 1
+		+r(1200)
+			min-height: 80vh
 	&__ttl
 		max-width: 920px
 	&__descr
 		max-width: 920px
 		font-size: 22px
+		+r(1200)
+			font-size: 16px
 		&-link
 			color: #fff
 			font-style: italic
@@ -362,9 +389,20 @@ input[type="number"]
 	min-height: 100vh
 	z-index: 3
 	transition: all 1.5s cubic-bezier(.23,1,.32,1)
+	+r(1200)
+		right: -120%
+		width: 100%
+		min-height: 400px
+		height: 100vh
+		overflow-y: scroll
+		padding: 20px 15px
 	&__in
 		opacity: 0
 		transition: all 2.5s ease
+		+r(1200)
+			max-width: 370px
+			margin-left: auto
+			margin-right: auto
 	&__cross
 		margin-left: auto
 		display: block
@@ -372,6 +410,9 @@ input[type="number"]
 		&:hover
 			transform: rotate(-90deg)
 			opacity: .8
+		+r(575)
+			svg
+				width: 20px
 	&__form
 		max-width: 470px
 		&-descr
@@ -382,10 +423,13 @@ input[type="number"]
 	height: 100%
 	width: 100%
 	padding-right: 18px
+	+r(1200)
+		padding-right: 0
 	.popup
 		right: 0
 		&__in
 			opacity: 1
+
 	.banner
 		&__overlay
 			opacity: .8
@@ -395,6 +439,8 @@ input[type="number"]
 		position: relative
 		padding: 60px 43px
 		margin-top: -110px
+		+r(1200)
+			padding: 30px
 		&::before
 			position: absolute
 			content: ''
@@ -416,16 +462,22 @@ input[type="number"]
 		left: 0
 		top: 0
 		margin-bottom: 0
+		+r(1200)
+			position: relative
 		&-wrp
 			position: relative
 			min-height: 132px
 			margin-bottom: 25px
+			+r(1200)
+				min-height: auto
 	&__calc
 		display: flex
 		flex-direction: column
 		justify-content: flex-end
 		align-items: flex-start
 		padding: 220px 0 20px
+		+r(1200)
+			padding: 60px 0 0
 		&-group
 			label
 				font-size: 18px
@@ -505,6 +557,8 @@ input[type="number"]
 			height: 100%
 			min-height: 850px
 			padding-bottom: 10px
+			+r(1200)
+				min-height: auto
 		&_1
 			position: relative
 			z-index: 1
@@ -515,6 +569,8 @@ input[type="number"]
 		position: relative
 		z-index: 1
 		padding: 60px 43px
+		+r(1200)
+			padding: 30px
 		&::before
 			position: absolute
 			content: ''
@@ -527,6 +583,9 @@ input[type="number"]
 			box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08)
 			border-radius: 5px
 			transform: matrix3d(1,0,0.00,-0.0002,0.00,1,0.00,0.00,0,0,1,0,0,0,0,1)
+			+r(1200)
+				right: auto
+				left: -15px
 		&>*
 			position: relative
 	&__subttl
@@ -537,10 +596,15 @@ input[type="number"]
 		top: 0
 		width: 970px
 		margin-bottom: 0
+		+r(1200)
+			width: auto
+			position: relative
 		&-wrp
 			position: relative
 			min-height: 62px
 			margin-bottom: 25px
+			+r(1200)
+				min-height: auto
 
 .dia
 	overflow: hidden
@@ -548,6 +612,8 @@ input[type="number"]
 		position: relative
 		z-index: 1
 		padding: 60px 43px
+		+r(1200)
+			padding: 30px
 		&::before
 			position: absolute
 			content: ''
@@ -561,6 +627,8 @@ input[type="number"]
 			border-radius: 5px
 			transform: matrix3d(1,0,0.00,0.0002,0.00,1,0.00,0.00,0,0,1,0,0,0,0,1)
 			z-index: 1
+			+r(1200)
+				width: 100%
 		&-img
 			position: absolute
 			content: ''
@@ -580,6 +648,9 @@ input[type="number"]
 			z-index: 1
 			padding-bottom: 110px
 			margin-top: -220px
+			+r(1200)
+				padding-bottom: 20px
+				margin-top: -20px
 		&_1
 			position: relative
 			max-width: 600px
@@ -593,6 +664,8 @@ input[type="number"]
 	&__card
 		position: relative
 		padding: 60px 0
+		+r(1200)
+			padding: 30px 0
 		&-in
 			position: relative
 			padding-left: 30px
@@ -609,6 +682,9 @@ input[type="number"]
 			box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08)
 			border-radius: 5px
 			transform: matrix3d(1,0,0.00,0.0002,0.00,1,0.00,0.00,0,0,1,0,0,0,0,1)
+			+r(1200)
+				left: auto
+				right: -15px
 		&>*
 			position: relative
 	&__form
@@ -625,11 +701,15 @@ input[type="number"]
 		&-wrp
 			position: relative
 			height: 100%
+			+r(1200)
+				display: none
 .footer
 	background-image: url('../img/footer__bg.jpg')
 	+cv
 	padding: 120px 0 60px
 	margin-top: -110px
+	+r(1200)
+		text-align: center
 	&__nav
 		margin-bottom: 30px
 		&-link
@@ -653,6 +733,8 @@ input[type="number"]
 		color: #fff
 		margin-bottom: 2px
 		margin-left: 50px
+		+r(1200)
+			margin-left: 0
 	&__soc
 		width: 40px
 		height: 40px

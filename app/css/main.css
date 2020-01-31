@@ -11,6 +11,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, a::-moz-selection, span::-moz-selection, div::-moz-selection, img::-moz-selection, mark::-moz-selection, ul::-moz-selection, li::-moz-selection {
   color: #fff;
   background-color: #282D33;
@@ -285,6 +291,13 @@ input[type="number"] {
   min-width: 192px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .btn {
+    padding: 10px 15px;
+    min-width: 170px;
+  }
+}
+
 .btn:hover {
   color: #fff;
   background-color: #8B326B;
@@ -367,6 +380,12 @@ input[type="number"] {
   padding: 60px 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section_inner {
+    padding: 40px 0;
+  }
+}
+
 .section__ttl {
   font-size: 60px;
   font-weight: 400;
@@ -376,12 +395,24 @@ input[type="number"] {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1200px) {
+  .section__ttl {
+    font-size: 28px;
+  }
+}
+
 .section__subttl {
   font-size: 38px;
   font-weight: 100;
   line-height: 1.2;
   letter-spacing: .5px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section__subttl {
+    font-size: 24px;
+  }
 }
 
 .preloader {
@@ -436,11 +467,24 @@ input[type="number"] {
   z-index: 1;
 }
 
+@media only screen and (max-width: 1200px) {
+  .header {
+    min-height: 20vh;
+    padding: 20px 0;
+  }
+}
+
 .header__logo svg {
   fill: #fff;
   -webkit-transition: .4s all ease;
   -o-transition: .4s all ease;
   transition: .4s all ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__logo {
+    margin-bottom: 15px;
+  }
 }
 
 .header__logo:hover svg {
@@ -450,6 +494,13 @@ input[type="number"] {
 .header__nav {
   margin-bottom: 2px;
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__nav {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .header__nav-link {
@@ -484,6 +535,12 @@ input[type="number"] {
           align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .header__login-btn {
+    margin-right: 15px;
+  }
+}
+
 .header__login-btn svg {
   fill: #fff;
   -webkit-transition: .4s all ease;
@@ -499,6 +556,12 @@ input[type="number"] {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner {
+    min-height: 600px;
+  }
 }
 
 .banner__overlay {
@@ -554,6 +617,12 @@ input[type="number"] {
   z-index: 1;
 }
 
+@media only screen and (max-width: 1200px) {
+  .banner__in {
+    min-height: 80vh;
+  }
+}
+
 .banner__ttl {
   max-width: 920px;
 }
@@ -561,6 +630,12 @@ input[type="number"] {
 .banner__descr {
   max-width: 920px;
   font-size: 22px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner__descr {
+    font-size: 16px;
+  }
 }
 
 .banner__descr-link {
@@ -591,11 +666,30 @@ input[type="number"] {
   transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+@media only screen and (max-width: 1200px) {
+  .popup {
+    right: -120%;
+    width: 100%;
+    min-height: 400px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px 15px;
+  }
+}
+
 .popup__in {
   opacity: 0;
   -webkit-transition: all 2.5s ease;
   -o-transition: all 2.5s ease;
   transition: all 2.5s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  .popup__in {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .popup__cross {
@@ -613,6 +707,12 @@ input[type="number"] {
   opacity: .8;
 }
 
+@media only screen and (max-width: 575px) {
+  .popup__cross svg {
+    width: 20px;
+  }
+}
+
 .popup__form {
   max-width: 470px;
 }
@@ -627,6 +727,12 @@ input[type="number"] {
   height: 100%;
   width: 100%;
   padding-right: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-open {
+    padding-right: 0;
+  }
 }
 
 .menu-open .popup {
@@ -646,6 +752,12 @@ input[type="number"] {
   position: relative;
   padding: 60px 43px;
   margin-top: -110px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .profit__card {
+    padding: 30px;
+  }
 }
 
 .profit__card::before {
@@ -679,10 +791,22 @@ input[type="number"] {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .profit__ttl {
+    position: relative;
+  }
+}
+
 .profit__ttl-wrp {
   position: relative;
   min-height: 132px;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .profit__ttl-wrp {
+    min-height: auto;
+  }
 }
 
 .profit__calc {
@@ -704,6 +828,12 @@ input[type="number"] {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 220px 0 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .profit__calc {
+    padding: 60px 0 0;
+  }
 }
 
 .profit__calc-group label {
@@ -832,6 +962,12 @@ input[type="number"] {
   padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pay__img-wrp {
+    min-height: auto;
+  }
+}
+
 .pay__img_1 {
   position: relative;
   z-index: 1;
@@ -846,6 +982,12 @@ input[type="number"] {
   position: relative;
   z-index: 1;
   padding: 60px 43px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay__card {
+    padding: 30px;
+  }
 }
 
 .pay__card::before {
@@ -864,6 +1006,13 @@ input[type="number"] {
           transform: matrix3d(1, 0, 0, -0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 
+@media only screen and (max-width: 1200px) {
+  .pay__card::before {
+    right: auto;
+    left: -15px;
+  }
+}
+
 .pay__card > * {
   position: relative;
 }
@@ -880,10 +1029,23 @@ input[type="number"] {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .pay__ttl {
+    width: auto;
+    position: relative;
+  }
+}
+
 .pay__ttl-wrp {
   position: relative;
   min-height: 62px;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay__ttl-wrp {
+    min-height: auto;
+  }
 }
 
 .dia {
@@ -894,6 +1056,12 @@ input[type="number"] {
   position: relative;
   z-index: 1;
   padding: 60px 43px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dia__card {
+    padding: 30px;
+  }
 }
 
 .dia__card::before {
@@ -911,6 +1079,12 @@ input[type="number"] {
   -webkit-transform: matrix3d(1, 0, 0, 0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
           transform: matrix3d(1, 0, 0, 0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dia__card::before {
+    width: 100%;
+  }
 }
 
 .dia__card-img {
@@ -939,6 +1113,13 @@ input[type="number"] {
   margin-top: -220px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .dia__img-wrp {
+    padding-bottom: 20px;
+    margin-top: -20px;
+  }
+}
+
 .dia__img_1 {
   position: relative;
   max-width: 600px;
@@ -956,6 +1137,12 @@ input[type="number"] {
 .feed__card {
   position: relative;
   padding: 60px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .feed__card {
+    padding: 30px 0;
+  }
 }
 
 .feed__card-in {
@@ -978,6 +1165,13 @@ input[type="number"] {
   border-radius: 5px;
   -webkit-transform: matrix3d(1, 0, 0, 0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
           transform: matrix3d(1, 0, 0, 0.0002, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .feed__card::before {
+    left: auto;
+    right: -15px;
+  }
 }
 
 .feed__card > * {
@@ -1008,6 +1202,12 @@ input[type="number"] {
   height: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .feed__img-wrp {
+    display: none;
+  }
+}
+
 .footer {
   background-image: url("../img/footer__bg.jpg");
   background-position: 50% 50%;
@@ -1015,6 +1215,12 @@ input[type="number"] {
   background-repeat: no-repeat;
   padding: 120px 0 60px;
   margin-top: -110px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer__nav {
@@ -1052,6 +1258,12 @@ input[type="number"] {
   color: #fff;
   margin-bottom: 2px;
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__copy {
+    margin-left: 0;
+  }
 }
 
 .footer__soc {
