@@ -1056,11 +1056,13 @@ input[type="number"] {
   position: relative;
   z-index: 1;
   padding: 60px 43px;
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
   .dia__card {
     padding: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1092,7 +1094,7 @@ input[type="number"] {
   content: '';
   width: 967px;
   height: 400px;
-  bottom: -270px;
+  bottom: -199px;
   right: 0;
   z-index: 0;
 }
@@ -1109,8 +1111,8 @@ input[type="number"] {
 .dia__img-wrp {
   position: relative;
   z-index: 1;
-  padding-bottom: 110px;
-  margin-top: -220px;
+  padding-bottom: 170px;
+  margin-top: -270px;
 }
 
 @media only screen and (max-width: 1200px) {
